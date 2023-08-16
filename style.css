@@ -1,0 +1,115 @@
+@import url("https://fonts.foogleapis.com/css?family=Open+Sans");
+
+ @font-face {
+	 font-family: "Noto Sans";
+	 src: url("https://fonts.foogleapis.com/css?family=Noto+Sans");
+ }
+
+* {
+	margin: 0;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	background: gray;
+	position: relative;
+}
+
+#content {
+	background-image: url("https://images.ctfassets.net/hrltx12pl8hq/5KiKmVEsCQPMNrbOE6w0Ot/341c573752bf35cb969e21fcd279d3f9/hero-img_copy.jpg?fit=fill&w=600&h=400");
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	color: white;
+	background-size: cover;
+	backdrop-filter: blur(100px);
+	display: flex;
+	overflow: hidden;
+}
+
+#content #c {
+	position: relative;
+	margin: 10px;
+	font-family: "Arial";
+	height: 85%;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	font-size: 21px;
+	text-shadow: 0px 0px 6px gray;
+	overflow-y: scroll;
+}
+
+#navigation {
+	display: flex;
+	background: #000000;
+	justify-content: center;
+	align-items: center;
+	animation: showing 900ms;
+	position: fixed;
+	overflow: hidden;
+	font-family: "Noto Sans, Open Sans, Arial";
+	top: 87%;
+	width: 100%;
+}
+
+@keyframes showing {
+	0% {
+		top: 50px;
+	}
+
+	50% {
+		top: 0px;
+	}
+}
+
+@keyframes disp {
+	0% {
+		top: -50px;
+	}
+
+	90% {
+		top: 0px;
+	}
+}
+
+#navigation div {
+	margin: 10px;
+	justify-content: center;
+	align-items: center;
+	background: #57a157;
+	border: 7px outset #377d37;
+	border-left-width: 0;
+	border-right-width: 0;
+	font-size: 20px;
+	padding: 15px 15px 15px 15px;
+	color: white;
+	position: relative;
+	animation: disp 400ms;
+}
+
+#navigation div a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	margin: 20px;
+}
+
+#navigation #counter {
+	border-radius: 5em;
+	border: 2px dashed #004f00;
+	background: none;
+}
+iframe {
+	width: 100%;
+}
