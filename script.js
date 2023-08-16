@@ -68,7 +68,7 @@ function show(content) {
 window.onload = () => {
 
 	var xhttp = new XMLHttpRequest()
-	xhttp.open('GET', '/content.json', true)
+	xhttp.open('GET', '../content.json', true)
 	xhttp.onload = function() {
 		if (xhttp.status == 200) {
 			show(xhttp.response)
